@@ -2,12 +2,16 @@ package com.app.distributed_job_scheduler.execution.domain.model;
 
 import com.app.distributed_job_scheduler.job.domain.model.Job;
 import jakarta.persistence.*;
+import lombok.Getter;
+import lombok.Setter;
 
 import java.time.LocalDateTime;
 import java.util.UUID;
 
 @Entity
 @Table(name = "job_executions")
+@Getter
+@Setter
 public class JobExecution {
 
     @Id

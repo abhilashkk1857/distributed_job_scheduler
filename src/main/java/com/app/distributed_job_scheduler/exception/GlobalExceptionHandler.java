@@ -1,5 +1,6 @@
 package com.app.distributed_job_scheduler.exception;
 
+import com.app.distributed_job_scheduler.execution.exception.ExecutionNotFoundException;
 import com.app.distributed_job_scheduler.job.exception.JobNotFoundException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -18,6 +19,11 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(JobNotFoundException.class)
     public ResponseEntity<ErrorResponse> handleJobNotFound(JobNotFoundException ex) {
+        return buildResponse(ex.getMessage(), HttpStatus.NOT_FOUND);
+    }
+
+    @ExceptionHandler(ExecutionNotFoundException.class)
+    public ResponseEntity<ErrorResponse> handleExecutionNotFound(ExecutionNotFoundException ex) {
         return buildResponse(ex.getMessage(), HttpStatus.NOT_FOUND);
     }
 
