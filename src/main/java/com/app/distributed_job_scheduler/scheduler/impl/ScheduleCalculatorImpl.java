@@ -1,7 +1,7 @@
-package com.app.distributed_job_scheduler.job.schedular.impl;
+package com.app.distributed_job_scheduler.scheduler.impl;
 
 import com.app.distributed_job_scheduler.job.domain.model.ScheduleType;
-import com.app.distributed_job_scheduler.job.schedular.ScheduleCalculator;
+import com.app.distributed_job_scheduler.scheduler.ScheduleCalculator;
 import org.springframework.scheduling.support.CronExpression;
 import org.springframework.stereotype.Service;
 

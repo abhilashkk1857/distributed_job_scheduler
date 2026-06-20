@@ -1,4 +1,4 @@
-package com.app.distributed_job_scheduler.job.schedular;
+package com.app.distributed_job_scheduler.scheduler;
 
 import com.app.distributed_job_scheduler.job.domain.model.ScheduleType;
 

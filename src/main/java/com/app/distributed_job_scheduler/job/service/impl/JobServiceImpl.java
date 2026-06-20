@@ -10,7 +10,7 @@ import com.app.distributed_job_scheduler.job.domain.model.ScheduleType;
 import com.app.distributed_job_scheduler.job.exception.JobNotFoundException;
 import com.app.distributed_job_scheduler.job.domain.mapper.JobMapper;
 import com.app.distributed_job_scheduler.job.repository.JobRepository;
-import com.app.distributed_job_scheduler.job.schedular.impl.ScheduleCalculatorImpl;
+import com.app.distributed_job_scheduler.scheduler.impl.ScheduleCalculatorImpl;
 import com.app.distributed_job_scheduler.job.service.JobService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Sort;
